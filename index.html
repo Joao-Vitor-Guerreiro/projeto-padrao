@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head class="cabeçalho">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padrão</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0, maximum-scale=1.0">
 </head>
-<body>
+<body class="fundo">
     <section>
-    <h1>Principais elementos HTML</h1>
-    <img src="img/img3.png" width="120"/>
+    <h1 class="título">Principais elementos HTML</h1>
+    <img class="logo" src="img/img3.png" width="120"/><br><br>
     <article>
         <h2>Parágrafo (p)</h2>
         <p>A tag "p" define um parágrafo.</p>
@@ -17,15 +19,16 @@
         <p>Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.</p>
     </article>
 
-
+    <article>
     <h2>Título (title)</h2>
     <p>A tag "Title" define um título.</p>
-    <h1>Isso é um título de tipo h1</h1>
-    <h2>Isso é um título de tipo h2</h2>
-    <h3>Isso é um título de tipo h3</h3>
-    <h4>Isso é um título de tipo h4</h4>
-    <h5>Isso é um título de tipo h5</h5>
-    <h6>Isso é um título de tipo h6</h6>
+    <h1 class="cor1">Isso é um título de tipo h1</h1>
+    <h2 class="cor2">Isso é um título de tipo h2</h2>
+    <h3 class="cor3">Isso é um título de tipo h3</h3>
+    <h4 class="cor4">Isso é um título de tipo h4</h4>
+    <h5 class="cor5">Isso é um título de tipo h5</h5>
+    <h6 class="cor6">Isso é um título de tipo h6</h6>
+    </article>
 
     <article>
         <h2>Lista ordenada (ol)</h2>
@@ -52,9 +55,8 @@
         <h2>Tabela (table)</h2>
         <p>A tag "table" define uma tabela HTML.</p>
         <p>Uma tabela HTML contém o elemento "table" e um ou mais elementos "tr"(linha),"td"(coluna) e "th"(célula).</p> <br>
-        <br>
         
-        <table>
+        <table class="tabela">
             <thead>
             <tr>
                 <th>Mês</th>
@@ -104,11 +106,11 @@
             Global: utilizados para páginas de outros domínios, ou seja, fora do site.
         </p>
         <br> <br>
-        Interno - <a href="#contato">Contato</a><br>
+        Interno - <a class="link1" href="#contato">Contato</a><br>
         Redirecionará ao elemento âncora contato. <br>
-        Local - <a href="exemplo.html">Exemplo</a><br>
+        Local - <a class="link2" href="exemplo.html">Exemplo</a><br>
         Redirecionará ao arquivo exemplo.html.<br>
-        Global - <a href="http://www.google.com/">Google</a><br>
+        Global - <a class="link3" href="http://www.google.com/">Google</a><br>
         Redirecionará à pagina inicial do google.
     </article>
 
