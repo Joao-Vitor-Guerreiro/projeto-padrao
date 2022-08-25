@@ -19,7 +19,9 @@ header {
 
 .fundo {
     background-color: #ffffff;
-    padding: 10px;
+    background-image: url(../img/fundo4.webp);
+    padding: 20px; 
+    background-size: 100%;
     /* background-image: url("../img/img4.jpg"); */
 }    
 
@@ -124,7 +126,7 @@ a:hover {
 }
 
 a:active {
-    color: #FC490B;
+    color: #00ff00;
 }
 
 .icone::before {
