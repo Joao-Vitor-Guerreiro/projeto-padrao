@@ -140,6 +140,7 @@ a:active {
     overflow: hidden;
     background-size: cover;
     margin:0 10px;
+    list-style-type: none;
 }
 
 .icone::after {
@@ -198,13 +199,21 @@ input[type=text]:focus {
 }
 
 .hoveraqui {
-   padding: 10px;
+   padding: 6px;
+   width: 280px;
+   border: 2px solid #0099ff;
+   border-radius: 10px;
+   font-weight: bold;
+   text-align: center;
+   margin: 18px;
+   margin-left: 0px;
 }
 
 .hoverp {
     display: none;
     background-color: #FC490B;
     padding: 20px;
+    border-radius: 10px;
 }
 
 div:hover p {
