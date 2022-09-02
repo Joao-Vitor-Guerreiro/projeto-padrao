@@ -6,9 +6,10 @@
 
 header {
     width:100%;
-    background-color: #050505;   
+    background-image: linear-gradient(to bottom right, rgb(17, 17, 17), rgb(0, 17, 255));   
     padding: 5px;
     border: 8px solid #FC490B;
+    border-radius: 20px;
 }
 
 .título {
@@ -18,8 +19,7 @@ header {
 }
 
 .fundo {
-    background-color: #ffffff;
-    background-image: url(../img/fundo4.webp);
+    background-color: #82cdff;
     padding: 20px; 
     background-size: 100%;
     /* background-image: url("../img/img4.jpg"); */
@@ -62,6 +62,7 @@ li:hover {
     border: 1px solid black;
     background-color: black;
     text-align: center;
+    border-radius: 10px;
 }
 
 .fonteh2 {
@@ -90,10 +91,12 @@ p{
 
 .img1 {
     width: 300px;
+    border-radius: 20px;
 }
 
 .img2 {
     width: 300px;
+    border-radius: 20px;
 }
 
 .links a:hover {
@@ -162,20 +165,20 @@ a[href$=".pdf"]::before {
 
 .formone {
     width: 200px;
-    border: 1px solid #ffffff;
+    border: 1px solid #82cdff;
     word-wrap: break-word;
 }
 
 .formtwo {
     width: 180px;
-    border: 1px solid #ffffff;
+    border: 1px solid #82cdff;
     word-wrap: break-word;
     display: inline-block;
 }
 
 .formthree {
     width: 100px;
-    border: 1px solid #ffffff;
+    border: 1px solid #82cdff;
     word-wrap: break-word;
     display: inline-block;
 }
@@ -218,3 +221,30 @@ div:hover p {
     
 
 }
+
+.circulo {
+    background: radial-gradient(circle, red, yellow, green);
+    width: 80px;
+    height: 50px;
+    position: relative;
+    padding: 80px;
+    border: 1px solid black;
+    border-radius: 80px;
+}
+
+.foto {
+    background-image: url(../img/img5.png);
+    background-image: 100%;
+    background-size: 150px;
+    width: 69px;
+    padding: 68px;
+    height: 10px;
+    border-width: 40px;
+    border: 29px;
+    border-radius: 70px;
+    position: absolute;
+    top: 35%;
+    left: 38%;
+    margin: -44px 0 0 -49px;
+ }
+  
