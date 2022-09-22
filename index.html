@@ -1,238 +1,425 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head class="cabeçalho">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padrão</title>
-    <link href="css/style.css" rel="stylesheet" />
-    <meta name="viewport" content="widht=device-width, initial-scale=1.0, maximum-scale=1.0">
-</head>
-<body class="fundo">
-    <header>
-    <section>
-    <h1 class="título">Principais elementos HTML</h1>
-    <img class="logo" src="img/img3.png" alt="Logo" />
-    <nav class="menu">
-      <ul>
-        <li>Inicio</li>
-        <li>Blog</li>
-        <li>Contato</li>
-        <li>Sobre</li>
-      </ul>
-    </nav>
-    </header>
-    <article>
-        <h2 class="fonteh2">Parágrafo (p)</h2>
-        <p class="cordafonte">A tag "p" define um parágrafo.</p>
-        <p>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. </p>
-        <p>Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.</p>
-    </article>
 
-    <article>
-    <h2 class="fonteh2">Título (title)</h2>
-    <p class="cordafonte">A tag "Title" define um título.</p>
-    <h1>Isso é um título de tipo h1</h1>
-    <h2>Isso é um título de tipo h2</h2>
-    <h3>Isso é um título de tipo h3</h3>
-    <h4>Isso é um título de tipo h4</h4>
-    <h5>Isso é um título de tipo h5</h5>
-    <h6>Isso é um título de tipo h6</h6>
-    </article>
+    <head class="cabeçalho">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" />
 
-    <article>
-        <h2 class="fonteh2">Lista ordenada (ol)</h2>
-        <p class="cordafonte">A tag "ol" cria uma lista ordenada.</p>
-        <ol>
-            <li>Maçã</li>
-            <li>Banana</li>
-            <li>Morango</li>
-        </ol>
+        <title>Padrão</title>
 
-        <article>
-            <h2 class="fonteh2">Lista não ordenada (ul)</h2>
-            <p class="cordafonte">A tag "ul" cria uma lista não ordenada.</p>
-            <ul>
-                <li>Café</li>
-                <li>Chá</li>
-                <li>Leite</li>
-            </ul>
-        </article>
+    </head>
 
-    </article>
+    <body>
+        <section>
 
-    <article>
-        <h2 class="fonteh2">Tabela (table)</h2>
-        <p class="cordafonte">A tag "table" define uma tabela HTML.</p>
-        <p>Uma tabela HTML contém o elemento "table" e um ou mais elementos "tr"(linha),"td"(coluna) e "th"(célula).</p> <br>
-        
-        <table class="tabela">
-            <thead>
-            <tr>
-                <th>Mês</th>
-                <th>Investimento</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Janeiro</td>
-                <td>100,00R$</td>
-            </tr>
-            <tr>
-                <td>Fevereiro</td>
-                <td>80,00R$</td>
-            </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>Março</td>
-                    <td>100,00R$</td>
-                </tr>
-        </table>
-    </article>
+            <article>
+                <h2>Título (title)</h2>
+                <p>A tag &lt;title&gt; define um título.</p>
+                <h1>Isso é um título de tipo h1</h1>
+                <h2 class="titleh2">Isso é um título de tipo h2</h2>
+                <h3>Isso é um título de tipo h3</h3>
+                <h4>Isso é um título de tipo h4</h4>
+                <h5>Isso é um título de tipo h5</h5>
+                <h6>Isso é um título de tipo h6</h6>
+            </article>
 
-    <article>
-        <h2 class="fonteh2">Imagem (img)</h2>
-        <p class="cordafonte">A tag "img" é usada para incorporar uma imagem em uma página HTML. 
-           A tag "img" tem dois atributos obrigatórios:
-           src - Especifica o caminho para imagem.
-           alt - Especifica um texto alternativo para a imagem, se a imagem por algum motivo não puder ser exibida.<br> <br>
-        </p>
-        <img class="img1" src="img/img1.webp" title="Tecnologia">  
-        <p class="cordafonte"> A tag "figure" especifica conteúdo independente, como ilustrações, diagramas, fotos, listagens de código e etc.<br>
-            A tag "figcaption" define uma legenda para um elemento de figura.</p>
-        <figure>
-        <img class="img2" src="img/img2.jfif" alt="Imagem tecnologia"> 
-        <figcaption>Fig.1 - Tecnologia.</figcaption>
-        </figure>
-
-    </article>
-
-    <article>
-        <h2 class="fonteh2">Links (a)</h2>
-        <p class="cordafonte">Através do atributo principal da tag "a", o href="", podemos redirecionar o usuário a outro documento ou recurso. Existem três diferentes tipos de links utilizados para redirecionamento dentro do href. Um link pode ser:
-            Interno: redireciona para um elemento existente dentro da mesma página;
-            Iocal: utilizados para páginas contendo o mesmo domínio, ou seja, entre páginas do mesmo site;
-            Global: utilizados para páginas de outros domínios, ou seja, fora do site.
-        </p>
-
-        <p class="links">
-        Interno - Redirecionará ao elemento âncora contato. <a class="linkcolor" href="contato">Contato</a>
-        Local - Redirecionará ao arquivo exemplo.html. <a class="linkcolor" href="exemplo.html">Exemplo</a>
-        
-        Global - Redirecionará à pagina inicial do google. <a class="linkcolor" href="http://www.google.com/">Google</a>
-        
-        </p>
-
-        <h3>Teste de Links</h3>
-        <ul>
-            <li><a href="https://www.historia.uff.br/files/TutorialPDF.pdf" target="_blank" class="icone ">Clique aqui para baixar Pdf</a></li>
-            <li><a href="https://www.tce.pi.gov.br/wp-content/uploads/2016/11/Relat%C3%B3rio-de-participa%C3%A7%C3%A3o-em-evento.docx" target="_blank" class="icone">Clique aqui para baixar Word</a></li>
-            <li><a href="https://www.tce.pi.gov.br/wp-content/uploads/2016/11/Relat%C3%B3rio-de-participa%C3%A7%C3%A3o-em-evento..xlsx" target="_blank" class="icone">Clique aqui para baixar Excel</a></li>
-        </ul>
-
-        <div class="hoveraqui"> Passe o mouse abaixo: 
-            <p class="hoverp">Sou o elemento p</p>
-        </div>
-    
+            <article>
+                <h2>Parágrafo (p)</h2>
+                <p>A tag &lt;p&gt; define um parágrafo.</p>
+                <p>Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem
+                    sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou
+                    uma
+                    cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. </p>
+                <p>Ele sobreviveu não apenas cinco séculos, mas também o salto para a composição eletrônica,
+                    permanecendo
+                    essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset
+                    contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como
+                    Aldus
+                    PageMaker, incluindo versões de Lorem Ipsum.</p>
+            </article>
 
 
-    </article>
+            <article>
+                <h2>Lista ordenada (ol)</h2>
+                <p>A tag &lt;ol&gt; cria uma lista ordenada.</p>
+                <ol>
+                    <li>Maçã</li>
+                    <li>Banana</li>
+                    <li>Morango</li>
+                </ol>
 
-    <article>
-        <h2 class="fonteh2">Quebra de linha (br)</h2>
-        <p class="cordafonte">A tag "br" insere uma única quebra de linha.</p>
-        <p>Para forçar<br> quebras de linha<br>em um texto,<br> use o elemento "br"</p>
+                <article>
+                    <h2>Lista não ordenada (ul)</h2>
+                    <p>A tag &lt;ul&gt; cria uma lista não ordenada.</p>
+                    <ul>
+                        <li>Café</li>
+                        <li>Chá</li>
+                        <li>Leite</li>
+                    </ul>
+                </article>
 
-    </article>
+            </article>
 
-    <article>
-        <h2 class="fonteh2">Formulário (Forms)</h2>
-        <p class="cordafonte">A tag "form" é usada para criar um formulário HTML para entrada do usuário.
-           Um formulário HTML com dois campos de entrada e um botão de envio:
-        </p>
-        <form action class="formone">
-            <label for="fname">Seu nome:</label>
-            <input type="text" id="fname" name="fname">
-            <label for="lname">Sua idade:</label>
-            <input type="text" id="lname" name="lname">
-            <input type="submit" value="Enviar"> 
-        </form><br>
-        <p>Um formulário HTML com caixas de seleção:</p>
-        <form action class="formtwo" method="get">
-            <input type="checkbox" name="vehicle1" value="Bmw">
-            <label for="vehicle1"> Eu tenho uma Bmw</label><br>
-            <input type="checkbox" name="vehicle2" value="Mercedes">
-            <label for="vehicle2"> Eu tenho uma Mercedes</label>
-            <input type="checkbox" name="vehicle3" value="Audi">
-            <label for="vehicle3"> Eu tenho um Audi</label>
-            <input type="submit" value="Enviar">
-        </form>
-        <p>Um formulário HTML com botões de opção:</p>
-        <form action class="formthree" method="get">
-            <input type="radio" id="phyton" name="fav_language" value="Phyton">
-            <label for="phyton">Phyton</label><br>
-            <input type="radio" id="Html" name="fav_language" value="Html">
-            <label for="Html">Html</label><br>
-            <input type="radio" id="JavaScript" name="fav_language" value="JavaScript">
-            <label for="javascript">JavaScript</label>
-            <input type="submit" value="Enviar">
-        </form>
-        <p>Um formulário HTML com lista suspensa com quatro opções:</p>
-        <label class="formfour" for="tamanho">Escolha o tamanho:</label>
-        <select name="tamanho" id="tamanho">
-            <option value="P">P</option>
-            <option value="M">M</option>
-            <option value="G">G</option>
-            <option value="GG">GG</option>
-        </select>
-        <input class="" type="submit" value="Enviar">
+            <article>
+                <h2>Tabela (table)</h2>
+                <p>A tag &lt;table&gt; define uma tabela HTML.</p>
+                <table id="estilo">
+                    <caption>Minha tabela com css</caption>
+                    <thead>
+                        <tr>
+                            <th>Mês</th>
+                            <th>Investimento</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td>Março</td>
+                            <td>100,00R$</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Janeiro</td>
+                            <td>100,00R$</td>
+                        </tr>
+                        <tr>
+                            <td>Fevereiro</td>
+                            <td>80,00R$</td>
+                        </tr> 
+                        <tr>
+                            <td>Janeiro</td>
+                            <td>100,00R$</td>
+                        </tr>
+                        <tr>
+                            <td>Fevereiro</td>
+                            <td>80,00R$</td>
+                        </tr>
+                    </tbody>
 
-    </article>
+                </table>
+            </article>
 
-    <article>
-        <h2 class="fonteh2">Texto em negrito (b)</h2>
-        <p class="cordafonte">A tag "b" especifica texto em negrito sem qualquer importância extra. </p>
-        <p> Este é um texto normal - <b> Este é um texto em negrito. </b> </p>
-    </article>
+            <article>
+                <h2>Imagem (img)</h2>
+                <p>A tag &lt;img&gt;  é usada para incorporar uma imagem em uma página HTML.
+                    A tag "img" tem dois atributos obrigatórios:
+                    src - Especifica o caminho para imagem.
+                    alt - Especifica um texto alternativo para a imagem, se a imagem por algum motivo não puder ser
+                    exibida.
+                </p>
+                <img src="img/img1.webp" title="Tecnologia">
 
-    <article>
-        <h2 class="fonteh2">Conteúdo independente (article)</h2>
-        <p class="cordafonte">A tag "article" especifica conteúdo independente e autocontido.</p>
-        <article>
-            <h3>Bitcoin</h3>
-            <p>Bitcoin é uma criptomoeda livre e descentralizada, um dinheiro eletrônico para transações financeiras ponto a ponto.</p>
-        </article>
-        <article>
-            <h3>Etherium</h3>
-            <p>Ethereum é uma plataforma descentralizada capaz de executar contratos inteligentes e aplicações descentralizadas usando a tecnologia blockchain.</p>
-        </article>
-    </article>
+                <h2>Figure e caption</h2>
+                <p> A tag &lt;figure&gt;  especifica conteúdo independente, como ilustrações, diagramas, fotos, listagens de
+                    código
+                    e etc.
+                    A tag &lt;figurecaption&gt;  define uma legenda para um elemento de figura.</p>
+                <figure>
+                    <img src="img/img2.jfif" alt="Imagem tecnologia">
+                    <figcaption>Fig.1 - Tecnologia.</figcaption>
+                </figure>
 
-    <article>
-        <div>
-             <h2 class="fonteh2">Hierarquia(Sou irmão do p, mas também neto do article)</h2>
-             <p>Exemplo de hierarquia(Sou irmão do h2, mas também neto do article)</p>
-        </div>
+            </article>
 
-    </article>
+            <article class="links">
+                <h2>Links (a)</h2>
+                <p>Através do atributo principal da tag &lt;a&gt;, o href="", podemos redirecionar o usuário a outro documento
+                        ou
+                        recurso. Existem três diferentes tipos de links utilizados para redirecionamento dentro do href.
+                        Um
+                        link pode ser:
+                        Interno: redireciona para um elemento existente dentro da mesma página;
+                        Iocal: utilizados para páginas contendo o mesmo domínio, ou seja, entre páginas do mesmo site;
+                        Global: utilizados para páginas de outros domínios, ou seja, fora do site.
+                </p>
+                <p>
 
-    <div class="circulo">
-        <div class="foto"></div>
-    </div>
+                Interno - <a href="#contato">Contato</a>
+                Redirecionará ao elemento âncora contato. <br>
+                Local - <a href="exemplo.html">Exemplo</a>
+                Redirecionará ao arquivo exemplo.html.<br>
+                Global - <a href="http://www.google.com/">Google</a>
+                Redirecionará à pagina inicial do google.
+                </p>
+            </article>
 
-    <article>
-        <h2 class="fonteh2">Rodapé (footer)</h2>
-        <p class="cordafonte">A tag "footer" define um rodapé para um documento ou seção.</p>
-        <footer class="rodape">
-            <p>Autor: João Vitor Guerreiro</p>
-            <p><a href="mailto:hege@example.com">joaovaguerreiro@gmail.com</a></p>
-            <p>Copyright © 2022 todos os direitos reservados.</p>
-          </footer>
-    </article>
+            <article>
+                <h2>Quebra de linha (br)</h2>
+                <p>A tag &lt;br&gt;  insere uma única quebra de linha.</p>
+                <p>Para forçar<br> quebras de linha<br>em um texto,<br> use o elemento "br"</p>
 
-    
-    
-</section>   
-</body>
+            </article>
+
+            <article>
+                <h2>Formulário (Forms)</h2>
+                <p>A tag &lt;form&gt;  é usada para criar um formulário HTML para entrada do usuário.
+                    Um formulário HTML com dois campos de entrada e um botão de envio:
+                </p>
+
+                <form action="">
+                    <fieldset>
+                        <legend>Input type button</legend>
+                        <input type="button" onclick="alert('Olá Mundo!')" value="Clique aqui!">
+                    </fieldset>
+                    <fieldset class="label_box">
+                        <legend>Input type checkbox</legend>
+                        <div>
+                            <input id="esport_f" name="futebol" value="futebol" type="checkbox" />
+                            <label for="esport_f">Futebol</label>
+                        </div>
+                        <div>
+                            <input id="esport_v" name="volei" value="volei" type="checkbox"/>
+                            <label for="esport_v">volei</label>
+                        </div>
+                        <div>
+                            <input id="esport_b" name="basquete" value="basquete" type="checkbox"/>
+                            <label for="esport_b">basquete</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type color</legend>
+                        <label for="favcolor">Selecione sua cor favorita:</label>
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type date</legend>
+                        <label for="Data">Data de hoje:</label>
+                        <input type="date" id="data" name="data">
+                    </fieldset>  
+                    <fieldset>
+                        <legend>Input type datetime-local</legend>
+                        <label for="dataehora">Data e hora de hoje:</label>
+                        <input type="datetime-local" id="dataehora" name="dataehora">
+                    </fieldset>   
+                    <fieldset>
+                        <legend>Input type email</legend>
+                        <label for="email">Digite seu email:</label>
+                        <input type="email" id="email" name="email">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type file</legend>
+                        <label for="meuarquivo">Selecione o arquivo:</label>
+                        <input type="file" id="myfile" name="myfile">
+                    </fieldset>   
+                    <fieldset>
+                        <legend>Input type hidden</legend>
+                        <label for="fname">Primeiro nome:</label>
+                        <input type="text" id="fname" name="fname">
+                        <input type="hidden" id="custId" name="custId" value="3487">
+                        <input type="submit" value="Submit">
+                    </fieldset>     
+                    <fieldset>
+                        <legend>Input type image</legend>
+                        <input type="image" src="img/img3.png" alt="Submit" width="48" height="48">
+                    </fieldset>  
+                    <fieldset>
+                        <legend>Input type month</legend>
+                        <label for="bdaymonth">Mês e dia do seu aniversário:</label>
+                        <input type="month" id="bdaymonth" name="bdaymonth">
+                    </fieldset>   
+                    <fieldset>
+                        <legend>Input type number</legend>
+                        <label for="quantity">Quantidade:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type password</legend>
+                        <div>
+                            <label for="username">Nome do usuário:</label>
+                            <input type="text" id="username" name="username">
+                        </div>
+                        <div>
+                            <label for="pwd">Senha:</label>
+                            <input type="password" name="pwd" id="pwd">
+                        </div>
+                    </fieldset>
+                    <fieldset class="label_box">
+                        <legend>Input type radio</legend>
+                        <div>
+                            <label for="sexo_m">Masculino</label>
+                            <input id="sexo_m" name="sexo" value="masculino" type="radio" />
+                        </div>
+                        <div>
+                            <label for="sexo_f">Feminino</label>
+                            <input id="sexo_f" name="sexo" value="feminino" type="radio"/>
+                        </div>
+                        <div>
+                            <label for="sexo_o">Outros</label>
+                            <input id="sexo_o" name="sexo" value="outros" type="radio"/>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type range</legend>
+                        <label for="vol">Volume</label>
+                        <input type="range" id="vol" name="vol" min="0" max="50">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type reset</legend>
+                        <div>
+                            <label for="fname">Primeiro nome:</label>
+                            <input type="text" name="fname" id="fname" value="João">
+                        </div>
+                        <div>
+                            <label for="lname">Segundo nome:</label>
+                            <input type="text" name="lname" id="lname" value="Vitor">
+                            <input type="reset">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type search</legend>
+                        <label for="gsearch">Google Search</label>
+                        <input type="search" id="gsearch" name="gsearch">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type submit</legend>
+                        <label for="fname">Seu nome completo:</label>
+                        <input type="text" name="fname" id="fname">
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type tel</legend>
+                        <label for="phone">Digite seu número:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type text</legend>
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input id="nome" name="nome" type="text" />
+                        </div>
+                        <div>
+                            <label for="sobrenome">Sobrenome:</label>
+                            <input id="sobrenome" name="sobrenome" type="text" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type time</legend>
+                        <label for="appt">Selecione a hora:</label>
+                        <input type="time" id="appt" name="appt">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type url</legend>
+                        <label for="homepage">Adicione sua homepage:</label>
+                        <input type="url" id="homepage" name="homepage">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Input type week</legend>
+                        <label for="week">Selecione a semana:</label>
+                        <input type="week" id="week" name="week">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Elemento &lt;select&gt;</legend>
+                        <label for="cars">Escolha a marca do seu carro:</label>
+                        <select name="cars" id="cars">
+                        <option value="BMW">Bmw</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Volvo">Volvo</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Elemento &lt;textarea&gt;</legend>
+                        <textarea name="message" cols="30" rows="4">
+                            Comente aqui sua opinião!
+                        </textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Elemento &lt;datalist&gt;</legend>
+                        <input list="browsers">
+                        <datalist id="browsers">
+                            <option value="Chrome"></option>
+                            <option value="Opera"></option>
+                            <option value="Firefox"></option>
+                            <option value="Safari"></option>
+                        </datalist>
+                      </fieldset>
+                      <fieldset>
+                        <legend>Elemento &lt;output&gt;</legend>
+                        <input type="range" id="a" name="a" value="50">
+                        100 +
+                        <input type="number" id="b" name="b" value="50">
+                         =
+                        <output name="x" for="a b"></output>
+                        <input type="submit">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Elemento &lt;optgroup&gt;</legend>
+                            <label for="cars">Escolha o tipo de carro:</label>
+                            <select name="cars" id="cars">
+                              <optgroup label="Carros super velozes">
+                                <option value="Lamborghini">Lamborghini</option>
+                                <option value="Ferrari">Ferrari</option>
+                              </optgroup>
+                              <optgroup label="Carros velozes">
+                                <option value="Bmw">Bmw</option>
+                                <option value="Audi">Audi</option>
+                              </optgroup>
+                            </select>
+                            <br><br>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+
+
+
+
+            
+
+                </form>
+
+            </article>
+
+            <article>
+                <h2>Texto em negrito (b)</h2>
+                <p>A tag &lt;b&gt;  especifica texto em negrito sem qualquer importância extra. </p>
+                <p> Este é um texto normal - <b> Este é um texto em negrito. </b> </p>
+            </article>
+
+            <article>
+                <h2>Conteúdo independente (article)</h2>
+                <p>A tag &lt;article&gt;  especifica conteúdo independente e autocontido.</p>
+                <article>
+                    <h3>Bitcoin</h3>
+                    <p>Bitcoin é uma criptomoeda livre e descentralizada, um dinheiro eletrônico para transações
+                        financeiras
+                        ponto a ponto.</p>
+                </article>
+                <article>
+                    <h3>Etherium</h3>
+                    <p>Ethereum é uma plataforma descentralizada capaz de executar contratos inteligentes e aplicações
+                        descentralizadas usando a tecnologia blockchain.</p>
+                </article>
+            </article>
+
+            <article>
+                <p>Exemplo inicio de hierarquia(Sou irmão do h2, mas também neto do article)</p>
+
+                <div>
+                    <h2>Hierarquia(Sou irmão do p, mas também neto do article)</h2>
+                    <p>Exemplo de hierarquia(Sou irmão do h2, mas também neto do article)</p>
+                    <p>Exemplo 2 de hierarquia(Sou irmão do h2, mas também neto do article)</p>
+                    <div>
+                        <p>Exemplo3 de hierarquia(Sou irmão do h2, mas também neto do article)</p>
+                    </div>
+                </div>
+                <p>Exemplo final de hierarquia(Sou irmão do h2, mas também neto do article)</p>
+                <p>Exemplo final dois de hierarquia(Sou irmão do h2, mas também neto do article)</p>
+
+            </article>
+
+            <article>
+                <h2>Rodapé (footer)</h2>
+                <p>A tag &lt;footer&gt;  define um rodapé para um documento ou seção.</p>
+                <footer>
+                    <p>Autor: João Vitor Guerreiro</p>
+                    <p><a href="mailto:hege@example.com">joaovaguerreiro@gmail.com</a></p>
+                    <p>Copyright © 2022 todos os direitos reservados.</p>
+                </footer>
+            </article>
+
+            
+        </section>
+    </body>
+
 </html>

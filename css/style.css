@@ -2,258 +2,159 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+
+    /* background-image: url("../img/img4.jpg"); */
 }
 
-header {
-    width:100%;
-    background-image: linear-gradient(to bottom right, rgb(17, 17, 17), rgb(0, 17, 255));   
-    padding: 5px;
-    border: 8px solid #FC490B;
-    border-radius: 20px;
+:root {
+    --td-th-color:#ddd;
+    --tr-even-color:#f2f2f2;
+    --background-th: #1638cc;
+    --color-th:rgb(255, 255, 255);
+    --img-box-shadow:#000000;
+    
 }
 
-.título {
-    color: #FC490B;
-    text-align: center;
+body {
+    line-height: 1.5em;
+    color: #333;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+}
+
+h1 {
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+h2 {
+    margin-left: 10px;
     font-size: 30px;
 }
 
-.fundo {
-    background-color: #82cdff;
-    padding: 20px; 
-    background-size: 100%;
-    /* background-image: url("../img/img4.jpg"); */
-}    
+.titleh2 {
+    font-size: 21px;
 
-.logo {
-    width: 100px;
-    padding: 6px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
 }
 
-.menu {
-    border: 1px solid black
-    position fixed;
-}
-
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    color: #FC490B
-}
-
-.menu li {
-    display: inline;
-    cursor: pointer;
-    padding: 10px;
+h4 {
     font-size: 18px;
-    float: left;
 }
 
-li:hover {
-    background-color:#ffffff ;
+h5 {
+    font-size: 16px;
 }
-.rodape {
-    border: 1px solid black;
-    background-color: black;
+
+h6 {
+    font-size: 15px;
+}
+
+h3, h4, h5, h6 {
+    margin-left: 10px;
+}
+
+ol li {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+ul li {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+table {
+    table-layout: fixed;
     text-align: center;
-    border-radius: 10px;
 }
 
-.fonteh2 {
-    font-size: 28px;
-    color: #FC490B;
+#estilo {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+#estilo td, #estilo th {
+    border: 1px solid var(--td-th-color);
+    padding: 8px;
+    text-align: center;
+  }
+  
+#estilo tr:nth-child(even){background-color: var(--tr-even-color);}
+  
+#estilo tr:hover {background-color: var(--td-th-color);}
+  
+#estilo th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--background-th);
+    color: var(--color-th);
+    text-align: center;
+  }
+
+  img {
+    width: 20%;
+    border: thin solid;
+    padding: 5px;
+    margin: 12px 10px 10px 0;
+    margin-left: 10px;
+    box-shadow: 5px 5px 5px var(--img-box-shadow);
 }
 
-p{
-    font-size: 18px;
+figcaption {
+    margin-left: 10px;
 }
 
 .links {
-
-}
-
-.linkcolor {
-    color: #0b1bfc
-}
-.rodape p {
-    color: #ffffff
-}
-.cordafonte {
-    font-weight: bold;
-
-}
-
-.img1 {
-    width: 300px;
-    border-radius: 20px;
-}
-
-.img2 {
-    width: 300px;
-    border-radius: 20px;
-}
-
-.links a:hover {
-    color: #FC490B;
-
-}
-
-#linkteste  {
-    width: 200px;
-    border: 1px solid #ffffff;
-    word-wrap: break-word;
-    
+    margin-left: 10px;
 }
 
 a {
-    color: #0b1bfc;
     text-decoration: none;
-    font-weight: bold;
-    display: block;
-}
-
-a:visited {
-    color: #0b1bfc;
-
+    color: blue;
 }
 
 a:hover {
-    color: #FC490B;
-    text-decoration: underline;
+    color: rgb(0, 0, 0);
 }
 
-a:active {
-    color: #00ff00;
-}
-
-.icone::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    overflow: hidden;
-    background-size: cover;
-    margin:0 10px;
-    list-style-type: none;
-}
-
-.icone::after {
-    content: "✔";
+fieldset {
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
-}
-
-a[href$=".pdf"]::before {
-    background-image: url("../img/pdf.png");
- }
-
- a[href*=".doc"]::before {
-    background-image: url("../img/word.png");
- }
-
- a[href*=".xlsx"]::before {
-    background-image: url("../img/excel.png");
- }
-
-.primeirolink::before image {
-    width: 10px;
-}
-
-.formone {
-    width: 200px;
-    border: 1px solid #82cdff;
-    word-wrap: break-word;
-}
-
-.formtwo {
-    width: 180px;
-    border: 1px solid #82cdff;
-    word-wrap: break-word;
-    display: inline-block;
-}
-
-.formthree {
-    width: 100px;
-    border: 1px solid #82cdff;
-    word-wrap: break-word;
-    display: inline-block;
-}
-
-input:focus {
-    background-color: rgba(0, 81, 255, 0.603);
-}
-
-input[type=text] {
-    width: 200px;
-    -webkit-transition: widht .35s ease-in-out;
-    transition: widht .35s ease-in-out;
-}
-
-input[type=text]:focus {
-    width: 250px;
-}
-
-.hoveraqui {
-   padding: 6px;
-   width: 280px;
-   border: 2px solid #0099ff;
-   border-radius: 10px;
-   font-weight: bold;
-   text-align: center;
-   margin: 18px;
-   margin-left: 0px;
-}
-
-.hoverp {
-    display: none;
-    background-color: #FC490B;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-div:hover p {
-    display: block;
-
-}
-
-.tabela, th, td {
-    border: 1px solid black;
-    width: 250px;
-    text-align: center;
-    padding: 2px;
-    background-color: #0011fa9c;
+    width: 98%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #eeeeee;
+    border-radius: 4px;
     
+}
+
+form input[type="text"], input[type="email"], input[type="number"] {
+    width: 300px;
+   -webkit-transition: width .30s ease-in-out;
+    transition: width .30s ease-in-out;
+    animation-delay: 2s;
+}
+
+
+form input[type="text"], input[type="email"], input[type="number"]:focus {
+    width: 300px;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    
+}
+
+form input:hover {
+    background-color: #eeeeee; 
 
 }
 
-.circulo {
-    background: radial-gradient(circle, red, yellow, green);
-    width: 80px;
-    height: 50px;
-    position: relative;
-    padding: 80px;
-    border: 1px solid black;
-    border-radius: 80px;
-}
 
-.foto {
-    background-image: url(../img/img5.png);
-    background-image: 100%;
-    background-size: 150px;
-    width: 69px;
-    padding: 68px;
-    height: 10px;
-    border-width: 40px;
-    border: 29px;
-    border-radius: 70px;
-    position: absolute;
-    top: 35%;
-    left: 38%;
-    margin: -44px 0 0 -49px;
- }
-  
+
+
+
+
