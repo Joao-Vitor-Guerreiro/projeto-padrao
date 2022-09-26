@@ -11,6 +11,14 @@
 
     </head>
 
+    <header class="navigation">
+        <ul>
+            <li><a class="active" href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+    </header>
+
     <body>
         <section>
 
@@ -41,7 +49,7 @@
             </article>
 
 
-            <article>
+            <article class="listas">
                 <h2>Lista ordenada (ol)</h2>
                 <p>A tag &lt;ol&gt; cria uma lista ordenada.</p>
                 <ol>
@@ -75,7 +83,7 @@
                     </thead>
                     <tfoot>
                         <tr>
-                            <td>Março</td>
+                            <td>Maio</td>
                             <td>100,00R$</td>
                         </tr>
                     </tfoot>
@@ -89,11 +97,11 @@
                             <td>80,00R$</td>
                         </tr> 
                         <tr>
-                            <td>Janeiro</td>
+                            <td>Março</td>
                             <td>100,00R$</td>
                         </tr>
                         <tr>
-                            <td>Fevereiro</td>
+                            <td>Abril</td>
                             <td>80,00R$</td>
                         </tr>
                     </tbody>
@@ -237,18 +245,12 @@
                     </fieldset>
                     <fieldset class="label_box">
                         <legend>Input type radio</legend>
-                        <div>
-                            <label for="sexo_m">Masculino</label>
-                            <input id="sexo_m" name="sexo" value="masculino" type="radio" />
-                        </div>
-                        <div>
-                            <label for="sexo_f">Feminino</label>
-                            <input id="sexo_f" name="sexo" value="feminino" type="radio"/>
-                        </div>
-                        <div>
-                            <label for="sexo_o">Outros</label>
-                            <input id="sexo_o" name="sexo" value="outros" type="radio"/>
-                        </div>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">HTML</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">CSS</label><br>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
                     </fieldset>
                     <fieldset>
                         <legend>Input type range</legend>
@@ -411,15 +413,16 @@
             <article>
                 <h2>Rodapé (footer)</h2>
                 <p>A tag &lt;footer&gt;  define um rodapé para um documento ou seção.</p>
-                <footer>
+                <footer class="rodape">
                     <p>Autor: João Vitor Guerreiro</p>
                     <p><a href="mailto:hege@example.com">joaovaguerreiro@gmail.com</a></p>
                     <p>Copyright © 2022 todos os direitos reservados.</p>
                 </footer>
             </article>
 
-            
         </section>
+
+            
     </body>
 
 </html>

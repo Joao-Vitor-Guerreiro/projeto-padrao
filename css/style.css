@@ -9,15 +9,19 @@
 :root {
     --td-th-color:#ddd;
     --tr-even-color:#f2f2f2;
-    --background-th: #1638cc;
+    --background-th:#1638cc;
     --color-th:rgb(255, 255, 255);
     --img-box-shadow:#000000;
-    
+    --a-text-decoration:#002fff;
+    --a-hover-color:rgb(0, 0, 0);
+    --fieldset-color:#e0e0e0;
+    --input-hover-color:#eeeeee;
 }
 
 body {
     line-height: 1.5em;
-    color: #333;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right top, #005aa7, #fffde4);
 }
 
 p {
@@ -33,6 +37,7 @@ h1 {
 h2 {
     margin-left: 10px;
     font-size: 30px;
+    
 }
 
 .titleh2 {
@@ -56,12 +61,12 @@ h3, h4, h5, h6 {
     margin-left: 10px;
 }
 
-ol li {
+.listas ol li {
     list-style-position: inside;
     margin-left: 10px;
 }
 
-ul li {
+.listas ul li {
     list-style-position: inside;
     margin-left: 10px;
 }
@@ -94,9 +99,9 @@ table {
     background-color: var(--background-th);
     color: var(--color-th);
     text-align: center;
-  }
+}
 
-  img {
+img {
     width: 20%;
     border: thin solid;
     padding: 5px;
@@ -115,11 +120,11 @@ figcaption {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: var(--a-text-decoration);
 }
 
 a:hover {
-    color: rgb(0, 0, 0);
+    color: var(--a-hover-color);
 }
 
 fieldset {
@@ -128,9 +133,8 @@ fieldset {
     padding: 5px;
     width: 98%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #eeeeee;
-    border-radius: 4px;
-    
+    background-color: var(--fieldset-color);
+    border-radius: 4px;    
 }
 
 form input[type="text"], input[type="email"], input[type="number"] {
@@ -149,9 +153,57 @@ form input[type="text"], input[type="email"], input[type="number"]:focus {
 }
 
 form input:hover {
-    background-color: #eeeeee; 
+    background-color: var(--input-hover-color);
 
 }
+
+.navigation {
+    padding-bottom: 15px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    background-image: url("../img/img3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 42px;
+}
+  
+.navigation li {
+    float: left;
+}
+  
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navigation li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: #002fff;
+}
+
+.rodape {
+    width: 100%;
+    text-align: center;
+    background-color: #111 
+    
+}
+
+.rodape p {
+    color: #dbdbdb;
+}
+
 
 
 
