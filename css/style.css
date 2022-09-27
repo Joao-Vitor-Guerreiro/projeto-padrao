@@ -20,7 +20,14 @@
 
 body {
     line-height: 1.5em;
-    background-image: linear-gradient(to right top, #005aa7, #fffde4);
+    background-color:#005aa7;
+}
+
+.titulo {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    font-size: 35px;
 }
 
 p {
@@ -36,12 +43,14 @@ h1 {
 h2 {
     margin-left: 10px;
     font-size: 30px;
-    
+    margin-bottom: 4px;
+    color: #000000;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
 
 .titleh2 {
     font-size: 21px;
-
+    text-decoration: none;
 }
 
 h4 {
@@ -129,7 +138,6 @@ a:hover {
 fieldset {
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
     width: 98%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--fieldset-color);
@@ -157,7 +165,10 @@ form input:hover {
 }
 
 .navigation {
+    width: 100%;
+    top: 0;
     padding-bottom: 4px;
+    position: fixed;
 }
 
 .navigation ul {
@@ -212,9 +223,9 @@ form input:hover {
 }
 
 main {
-    max-width: 85%;
+    max-width: 80%;
     background: white;
-    margin: auto;
+    margin: 55px auto 5px;
     padding: 10px;
     border-radius: 10px
 }
