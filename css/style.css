@@ -220,6 +220,7 @@ form input:hover {
 }
 
 main {
+
     max-width: 80%;
     background: white;
     margin: 55px auto 5px;
@@ -232,17 +233,19 @@ main {
     clear: both;
     display: table;
     width: 100%;
-    font-size: 2vw;
+    font-size: 30px;
+    color: white;
+    background-color: #f1f1f1;
 }
 
 [class*="col-"] {
     float:left;
-    padding:10px;
+    padding:15px;
   }
 
 .col-color  div{
     border:1px solid rgb(0, 0, 0);
-    background-color: #e0e0e0;
+    background-color: DodgerBlue;
 }
   
   .col-1 {width: 8.33%;}
@@ -257,6 +260,21 @@ main {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+}
+  
+.flex-container > div {
+    background-color: DodgerBlue;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
   
 @media (max-width: 1024px) {
     body {
