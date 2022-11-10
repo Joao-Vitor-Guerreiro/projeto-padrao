@@ -272,7 +272,11 @@ main {
     color: white;
     margin: 10px;
     text-align: center;
+<<<<<<< HEAD
     line-height: 50px;
+=======
+    line-height: 75px;
+>>>>>>> e555d83ea9732b51b50291866365f1c4f1d4de04
     font-size: 30px;
 }
   
